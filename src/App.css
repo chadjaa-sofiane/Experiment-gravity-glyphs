@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.space {
+  position: fixed;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.gravity-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.floating-item {
+  position: absolute;
+  translate: var(--x) var(--y) var(--z);
+}
